@@ -1,0 +1,51 @@
+<idea-plugin version="2">
+    <id>name.onix.tinyWeatherIntelliJPlugin</id>
+    <name>Tiny Weather</name>
+    <version>0.0.2</version>
+    <vendor email="vadimnekhai@gmail.com" url="http://onix.name">Vadim Nekhai</vendor>
+
+    <description><![CDATA[
+      A tiny plugin, that get weather condition information via online weather service.
+      ]]></description>
+
+    <change-notes><![CDATA[
+      <p>0.0.2</p>
+        <ul>
+          <li>
+            First public release, small fixes and refactoring. Seems that Google Weather API is now closed, switched to Yahoo! Weather.
+          </li>
+        </ul>
+
+        <p>0.0.1</p>
+        <ul>
+          <li>
+            First build.
+          </li>
+        </ul>
+      ]]>
+    </change-notes>
+
+    <idea-version since-build="107.105"/>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="WeatherMenu" text="We_ather" description="Tiny Weather plugin menu">
+            <add-to-group group-id="MainMenu" anchor="last" />
+            <action id="ShowWeather" class="ShowWeather" text="_Show Weather" description="Show current weather and forecast" icon="resources/weather-plugin-main-icon.png" />
+        </group>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+</idea-plugin>
