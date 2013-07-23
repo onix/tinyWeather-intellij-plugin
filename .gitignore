@@ -1,0 +1,18 @@
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.out
+
+## Java Specific
+*.class
+
+# Package Files #
+*.jar
+
+## IntelliJ Specific
+*.eml
+*.iws
+.*.sw?
+.idea/
+out/
